@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 const categorias = [
   {
-    nome: "BOLO DE POTE",
+    nome: "BOLO DE POTE",      
     preco: 10,
     imagem: "/bolo.jpg",
     itens: [
@@ -189,9 +189,13 @@ export default function Home() {
                     {cat.nome}
                   </h3>
 
-                  <span style={{ color: "#000", fontWeight: "bold" }}>
-                    R$ {cat.preco},00
-                  </span>
+                  <div style={{ display: "flex", flexDirection: "column" }}>
+  
+
+  <span style={{ color: "#000", fontWeight: "bold" }}>
+    R$ {cat.preco},00
+  </span>
+</div>
                 </div>
 
                 <img
