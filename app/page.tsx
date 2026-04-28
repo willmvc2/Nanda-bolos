@@ -45,7 +45,26 @@ const categorias = [
       "Prestigio",
     ],
   },
+  {
+  nome: "BOLO COM NUTELLA",
+  preco: 13,
+  imagem: "/nutella1.jpg",
+  itens: ["Ninho com Nutella"],
+},
+{
+  nome: "VULCÃO COM NUTELLA",
+  preco: 19,
+  imagem: "/nutella2.jpg",
+  itens: ["Ninho com Nutella"],
+},
+{
+  nome: "CONE COM NUTELLA",
+  preco: 14,
+  imagem: "/nutella3.jpg",
+  itens: ["Ninho com Nutella"],
+},
 ];
+
 
 export default function Home() {
   const [quantidades, setQuantidades] = useState<{ [key: string]: number }>({});
@@ -101,29 +120,18 @@ export default function Home() {
           position: "relative",
           width: "100%",
           maxWidth: 700,
-          padding: "120px 30px",
+          padding: "20px 30px 60px 30px",
           boxSizing: "border-box",
         }}
       >
-        {/* BORDA */}
-        <img
-          src="/borda.png"
-          style={{
-            position: "absolute",
-            inset: 0,
-            width: "100%",
-            height: "100%",
-            zIndex: 0,
-            pointerEvents: "none",
-          }}
-        />
+        
 
         {/* CONTEÚDO */}
         <div
           style={{
             position: "relative",
             zIndex: 1,
-            padding: "90px 60px",
+            padding: "20px 15px",
             boxSizing: "border-box",
           }}
         >
