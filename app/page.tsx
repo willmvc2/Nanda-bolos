@@ -265,7 +265,7 @@ export default function Home() {
 
                 mensagem += `%0A💰 Total: R$ ${total},00`;
 
-                const telefone = "5511981223969";
+                const telefone = "5511987851540";
 
                 const url = `https://wa.me/${telefone}?text=${mensagem}`;
 
